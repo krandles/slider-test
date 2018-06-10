@@ -39,13 +39,12 @@ class ImageSlider extends React.Component {
       autoplaySpeed: 3000,
       dots: false,
       infinite: false,
-      speed: 200,
+      speed: 1000,
       slidesToShow: 1,
       slidesToScroll: 1,
       swipeToSlide: true,
       swipe: true,
-      fade: true,
-      centerMode: true,
+      fade: true
     }
   }
 

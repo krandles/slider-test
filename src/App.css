@@ -26,9 +26,9 @@ img {
 }
 
 h3 {
-  margin: 10px 10px;
+  margin: 5px 10px;
   font-family: 'F Grotesk', sans-serif;
-  font-size: 2.5em;
+  font-size: 2.6em;
 }
 
 button.slick-arrow.slick-prev::before {
@@ -55,6 +55,10 @@ button.slick-arrow.slick-next::before {
   justify-content: flex-end;
 }
 
+.header-right-right {
+  margin-left: 30px;
+}
+
 .footer {
   grid-row: 3 / 4;
   display: flex;
@@ -65,6 +69,10 @@ button.slick-arrow.slick-next::before {
 .footer-left {
   display: flex;
   justify-content: flex-start;
+}
+
+.footer-left-left {
+  margin-right: 30px;
 }
 
 .footer-right {
@@ -113,13 +121,13 @@ button.slick-arrow.slick-next::before {
 
 .image-landscape {
   align-self: center;
-  width: 100% !important;
+  width: 90vw !important;
   height: auto !important;
 }
 
 .image-portrait {
   display: block;
-  height: calc(100vh - 100px) !important;
+  height: calc(100vh - 120px) !important;
   width: auto !important;
   margin: 20px auto;
   /* transform: translateY(-5px); */
@@ -132,6 +140,10 @@ button.slick-arrow.slick-next::before {
 
   .image-portrait {
     height: calc(80vh) !important;
+  }
+
+  h3 {
+    font-size: 2.4em;
   }
 }
 

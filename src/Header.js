@@ -9,7 +9,7 @@ class Header extends React.Component {
         </div>
         <div className="header-right">
           <h3>JOURNAL</h3>
-          <h3>SERIES</h3>
+          <h3 className="header-right-right">SERIES</h3>
         </div>
       </div>
     );
