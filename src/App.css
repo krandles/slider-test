@@ -1,0 +1,152 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+@font-face {
+  font-family: 'F Grotesk';
+  src: local('F Grotesk'), url('./fonts/FGroteskThin-Regular.otf');
+}
+
+
+html, body {
+  min-height: 100%;
+}
+
+img {
+  width: none;
+  height: none;
+}
+
+.App {
+  text-align: center;
+  display: grid;
+  grid-template-rows: 50px calc(100% - 100px) 50px;
+  height: 100%;
+  max-height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+h3 {
+  margin: 10px 10px;
+  font-family: 'F Grotesk', sans-serif;
+  font-size: 2.5em;
+}
+
+button.slick-arrow.slick-prev::before {
+  color: black;
+}
+
+button.slick-arrow.slick-next::before {
+  color: black;
+}
+
+.header {
+  grid-row: 1 / 2;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-left {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.header-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer {
+  grid-row: 3 / 4;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.footer-left {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.footer-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+
+.slider-container {
+  grid-row: 2 / 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: calc(100% - 100px); */
+}
+
+
+.slick-slider {
+  width: 95vw;
+  
+}
+
+.slick-track {
+  height: calc(100vh - 100px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  /* z-index: 100; */
+}
+
+
+
+.slick-initialized .slick-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .image-frame {
+  display: flex;
+  height: auto;
+  justify-content: center;
+} */
+
+.image-landscape {
+  align-self: center;
+  width: 100% !important;
+  height: auto !important;
+}
+
+.image-portrait {
+  display: block;
+  height: calc(100vh - 100px) !important;
+  width: auto !important;
+  margin: 20px auto;
+  /* transform: translateY(-5px); */
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+  .slick-track {
+    max-height: calc(100vh - 180px);
+  }
+
+  .image-portrait {
+    height: calc(80vh) !important;
+  }
+}
+
+/* .slick-slide {
+  text-align: center;
+}
+
+.slick-slide::before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.slick-slide img {
+  vertical-align: middle;
+  display: inline-block;
+} */
