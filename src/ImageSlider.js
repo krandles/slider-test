@@ -29,7 +29,7 @@ class ImageSlider extends React.Component {
         ratio: "landscape"
       },
       {
-        url: '/main-images/Sabina+Schreder2.jpg',
+        url: 'https://res.cloudinary.com/mchmahon-test/image/upload/v1528936757/main/Sabina_Schreder2.jpg',
         ratio: "landscape"
       },
     ],
@@ -39,7 +39,7 @@ class ImageSlider extends React.Component {
       autoplaySpeed: 3000,
       dots: false,
       infinite: false,
-      speed: 1000,
+      speed: 0,
       slidesToShow: 1,
       slidesToScroll: 1,
       swipeToSlide: true,
@@ -47,6 +47,27 @@ class ImageSlider extends React.Component {
       fade: true
     }
   }
+
+  // api key 189487399689375
+  // api secret kWooJlp-oDxlM90ufjytSxyfyWs
+
+  componentDidMount() {
+    fetch('http://167.99.153.7/wp-json/wp/v2/media', {
+      method: 'GET'
+    })
+      .then(res => res.json())
+      .then(res => {
+        console.log(res)
+        const imageArray = res.map(image => { return {
+          url: image.source_url,
+          ratio: image.media_details.height < image.media_details.width ? "landscape" : "portrait"
+        }})
+        this.setState({
+          images: imageArray
+        })
+      })
+  }
+  
 
 
   render() {

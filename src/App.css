@@ -28,6 +28,7 @@ img {
 h3 {
   margin: 5px 10px;
   font-family: 'F Grotesk', sans-serif;
+  font-weight: normal;
   font-size: 2.6em;
 }
 
@@ -87,7 +88,6 @@ button.slick-arrow.slick-next::before {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* height: calc(100% - 100px); */
 }
 
 
@@ -102,7 +102,6 @@ button.slick-arrow.slick-next::before {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  /* z-index: 100; */
 }
 
 
@@ -112,12 +111,6 @@ button.slick-arrow.slick-next::before {
   align-items: center;
   justify-content: center;
 }
-
-/* .image-frame {
-  display: flex;
-  height: auto;
-  justify-content: center;
-} */
 
 .image-landscape {
   align-self: center;
@@ -146,19 +139,3 @@ button.slick-arrow.slick-next::before {
     font-size: 2.4em;
   }
 }
-
-/* .slick-slide {
-  text-align: center;
-}
-
-.slick-slide::before {
-  content: '';
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
-}
-
-.slick-slide img {
-  vertical-align: middle;
-  display: inline-block;
-} */
